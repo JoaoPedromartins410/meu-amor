@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6 Meses de Amor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffd6e0, #ffe5ec);
+      color: #660033;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .heart {
+      font-size: 2em;
+      animation: pulse 1.5s infinite;
+      color: red;
+    }
+
+    .frases {
+      max-width: 700px;
+      margin: 30px auto;
+      font-size: 1.3em;
+      line-height: 1.8;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      animation: fadeInUp 2s ease;
+    }
+
+    .foto-tabela {
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .foto-tabela img {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .foto-tabela td {
+      vertical-align: middle;
+      padding: 20px;
+      font-size: 1.2em;
+      color: #5a0033;
+    }
+
+    audio {
+      margin-top: 30px;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #444;
+    }
+
+    /* Animação de corações flutuando */
+    .floating-hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .floating-hearts span {
+      position: absolute;
+      color: red;
+      animation: float 10s linear infinite;
+      font-size: 20px;
+      opacity: 0.8;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) translateX(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) translateX(50px);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="floating-hearts">
+    <!-- 30 corações flutuantes -->
+    <script>
+      for (let i = 0; i < 30; i++) {
+        const heart = document.createElement('span');
+        heart.innerHTML = '❤️';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (8 + Math.random() * 5) + 's';
+        document.querySelector('.floating-hearts').appendChild(heart);
+      }
+    </script>
+  </div>
+
+  <h1>💖 Feliz 6 Meses de Amor 💖</h1>
+
+  <div class="frases">
+    <p>Seis meses ao seu lado e cada dia mais certo de que você é o amor da minha vida.</p>
+    <p>Te amo com todas as letras, palavras e pronúncias.</p>
+    <p>Com você, descobri o verdadeiro significado da felicidade.</p>
+	<p>Com você que quero viver a vida inteira ao seu lado e contigo que quero acordar todos os dias vendo esse teu sorriso lindo 
+	sou muito grato a Deus por te ter em minha vida.</p>
+	<p>Naquele dia em que te conheci eu sabia que havia algo diferente em você e quando paramos de se falar eu sentia muita 
+	sua falta e quando você voltou meu coração começou a bater mais forte e ali eu vi que sem você eu não viveria mais.</p>
+<p> Você e o meu maior presente, me lembro todas as noites que pedia a Deus uma pessoa que fosse diferente e derrepente 
+você apareceu em minha vida e me mostrou que além de diferente de todo mundo você é incrivel e ainda mais você 
+me faz muito feliz, como diz "luan santana você me trouxe um caminhão de coisas boas e minha sorte disfarçada de pessoa
+por muitas noites passei juntando as mãos pedindo ao céu pra me mandar uma direção". aqui estamos Completando 6 meses, Deus e muito bom
+ele é maravilhoso ele me trouxe alguém do jeito que sempre sonhei.</p>	
+    <p>Que venham muitos outros meses, anos e eternidades ao seu lado.</p>
+    <p>Você é meu porto seguro, minha paz, meu mundo inteiro.</p>
+    <p><span class="heart">❤️</span></p>
+  </div>
+
+  <div class="foto-tabela">
+    <table>
+      <tr>
+        <td><img src="amor3.jpg" alt="Nossa foto juntos"></td>
+        <td>
+          Esse momento foi só um dos muitos especiais que vivemos juntos.<br>
+          Cada sorriso. Cada dia juntos jogando, tudo vale a pena com você.<br>
+          Eu te amo mais do que consigo explicar 💑
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <h2>🎶 Nossa Música 🎶</h2>
+    <audio controls autoplay loop>
+      <source src="musica.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio HTML5.
+    </audio>
+  </div>
+
+  <footer>
+    Feito com amor para nós dois 💕<br>
+    6 meses de uma história linda que só está começando 🌹
+  </footer>
+
+</body>
+</html>
